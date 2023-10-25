@@ -20,7 +20,7 @@ module.exports = {
     extend: {
       colors: {
         primary: '#FFA41B',
-        secundary: '#40c4FF',
+        secundary: '#000',
         accent: '#FFA41B',
       },
       backgroundImage: {
@@ -30,6 +30,7 @@ module.exports = {
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
         benefitsbg: "url('./assets/benefits.png')",
+        team: "url('./assets/time.png')",
       },
     },
   },

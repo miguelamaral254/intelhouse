@@ -37,23 +37,52 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 lg:section" id="contact">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+    <section className="" id="contact">
+      <div className=" mx-auto">
+        <div
+          className="
+        flex flex-col 
+        lg:flex-row  
+        bg-benefitsbg
+        bg-no-repeat 
+        bg-cover
+        pt-5 
+        
+        overflow-hidden
+        min-h-[100vh]
+        lag:min-h-[78vh]
+        flex
+        flex-col
+        lg:flex-row
+        lg:gap-x-5"
+        >
           {/* text */}
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex justify-start items-center"
+            className="flex-1
+              justify-start
+              items-center
+              bg-team
+              bg-no-repeat 
+              bg-contain
+              lg:ml-5
+              lg:pt-44
+              
+              
+              lg:min-h-[100vh]
+              lag:min-h-[78vh] 
+            
+            overflow-hidden"
           >
-            <div>
-              <h4 className="text-x1 uppercase text-accent font-medium mb-2 tracking-wider">
-                Get in touch
+            <div className="lg:pt-64  rounded-3xl p-5 lg:w-11/12">
+              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wider  ">
+                Precisa de ajuda?
               </h4>
               <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Let's work <br /> together!
+                Nos mande uma mensagem
               </h2>
               <motion.div
                 variants={fadeIn("left", 0.6)}
@@ -69,18 +98,7 @@ const Contact = () => {
               lg:mx-0
               "
               >
-                <a href="https://wa.me/5581996379353" target="_blank">
-                  <FaWhatsapp />
-                </a>
-                <a href="https://github.com/miguelamaral254" target="_blank">
-                  <FaGithub />
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/miguel-augusto-8b7350217/"
-                  target="_blank"
-                >
-                  <FaLinkedin />
-                </a>
+
               </motion.div>
             </div>
           </motion.div>
@@ -104,7 +122,7 @@ const Contact = () => {
               name="email"
               id="email"
               type="email"
-              placeholder="Your email"
+              placeholder="Seu e-mail"
               autoComplete="off"
               required
               value={email}
@@ -120,7 +138,7 @@ const Contact = () => {
               id="name"
               type="text"
               name="name"
-              placeholder="Your name"
+              placeholder="Seu nome"
               autoComplete="off"
               required
               value={name}
@@ -136,7 +154,7 @@ const Contact = () => {
               id="message"
               name="message"
               type="text"
-              placeholder="Your message"
+              placeholder="Sua mensagem"
               value={message}
               onChange={(e) => setMessage(e.target.value)}
             ></textarea>
@@ -146,11 +164,11 @@ const Contact = () => {
               errors={formState.errors}
             />
             <button
-              className="btn btn-lg"
+              className="btn btn-lg border "
               type="submit"
               disabled={formState.submitting}
             >
-              Send message
+              Enviar
             </button>
           </motion.form>
         </div>

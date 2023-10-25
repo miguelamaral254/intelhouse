@@ -13,7 +13,8 @@ const App = () => {
     bg-site 
     bg-no-repeat 
     bg-cover 
-    overflow-hidden"
+    overflow-hidden
+    "
     >
       <Nav />
       <Banner />

@@ -109,6 +109,8 @@ const Banner = () => {
                   sequence={["Agilidade", 2000, "Praticidade", 2000]}
                   speed={50}
                   className="
+                  font-primary
+                  font-bold
                 text-secundary"
                   wrapper="span"
                   repeat={Infinity}
