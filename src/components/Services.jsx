@@ -2,7 +2,7 @@ import React from "react";
 //icons
 import { BsArrowUpRight } from "react-icons/bs";
 // motion
-import { m, motion } from "framer-motion";
+import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 //link
