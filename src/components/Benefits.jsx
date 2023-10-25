@@ -53,12 +53,15 @@ const Benefits = () => {
         bg-benefitsbg
         bg-no-repeat 
         bg-cover 
+        
         overflow-hidden
         min-h-[100vh]
         lag:min-h-[78vh]
         flex
         flex-col
-        lg:flex-row"
+        lg:flex-row
+        lg:gap-x-5
+        "
         >
           {/* text & image*/}
           <motion.div
@@ -69,7 +72,7 @@ const Benefits = () => {
             className="
           flex-1
           lg:bg-services
-          lg:bg-blend-
+          
           lg:bg-bottom
           bg-no-repeat
           
@@ -95,7 +98,9 @@ const Benefits = () => {
                 O SmartUP é um aplicativo para casas inteligentes que oferece
                 controle centralizado, automação e segurança, além de permitir o
                 controle remoto, tornando as residências mais inteligentes e
-                práticas.
+                práticas. O SmartUP é uma solução completa para tornar a sua
+                casa mais inteligente, conveniente e segura, adaptando-se às
+                necessidades e estilos de vida individuais.
               </h3>
             </div>
           </motion.div>
@@ -143,38 +148,6 @@ const Benefits = () => {
                       >
                         {description}
                       </p>
-                    </div>
-                    <div
-                      className="
-                    flex
-                    flex-col
-                    flex-1
-                    items-end"
-                    >
-                      <a
-                        href={link}
-                        target="_blank"
-                        className="
-                      btn
-                      w-9
-                      h-9
-                      mb-[42px]
-                      flex
-                      justify-center
-                      items-center
-                      "
-                      >
-                        <BsArrowUpRight />
-                      </a>
-                      <a
-                        href={link}
-                        target="_blank"
-                        className="
-                      text-gradient
-                      text-sm"
-                      >
-                        <p>Learn More</p>
-                      </a>
                     </div>
                   </div>
                 );
