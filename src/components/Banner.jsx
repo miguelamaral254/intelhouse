@@ -65,6 +65,7 @@ const Banner = () => {
           text-center
           font-secondary
           lg:text-left
+          pb-56
           "
           >
             <motion.h1
@@ -160,7 +161,7 @@ const Banner = () => {
               <a
                 href="#"
                 className="
-              
+              text-accent
                 btn-link"
               >
                 <Link to="work" activeClass="active" smooth={true} spy={true}>
