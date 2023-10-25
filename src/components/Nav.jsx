@@ -1,9 +1,8 @@
 import React from "react";
 import { BiHomeAlt } from "react-icons/bi";
-import { BsChatSquare  } from "react-icons/bs";
-import {MdSupportAgent} from "react-icons/md"
-import { HiDeviceTablet} from "react-icons/hi"
-import {TbCheckupList} from "react-icons/tb"
+import { MdSupportAgent } from "react-icons/md";
+import { HiDeviceTablet } from "react-icons/hi";
+import { TbCheckupList } from "react-icons/tb";
 import { Link } from "react-scroll";
 import logo from "../assets/logo.svg";
 
@@ -32,8 +31,8 @@ const Nav = () => {
       text-2x1
       text-white/50"
         >
-          <div >
-            <img src={logo} alt="lgo" className=" w-1/6"/>
+          <div className="flex items-center">
+            <img src={logo} alt="logo" className="w-24 max-w-[460px] h-auto" /> {/* Estilo para tornar o logo responsivo */}
           </div>
           <div className="flex">
             <Link
@@ -82,7 +81,7 @@ const Nav = () => {
             >
               <TbCheckupList />
             </Link>
-            
+
             <Link
               to="contact"
               activeClass="active"

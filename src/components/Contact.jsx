@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { useForm, ValidationError } from "@formspree/react";
 import { fadeIn } from "../variants";
-//icons
-import { FaGithub, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   const [showMessage, setShowMessage] = useState(false);
@@ -25,7 +23,7 @@ const Contact = () => {
             setShowMessage(false);
           }, 6000);
 
-          // Limpar os campos
+          // Clear the fields
           setEmail("");
           setName("");
           setMessage("");
@@ -37,68 +35,34 @@ const Contact = () => {
   };
 
   return (
-    <section className="" id="contact">
-      <div className=" mx-auto">
-        <div
-          className="
-        flex flex-col 
-        lg:flex-row  
-        bg-benefitsbg
-        bg-no-repeat 
-        bg-cover
-        pt-5 
-        
-        overflow-hidden
-        min-h-[100vh]
-        lag:min-h-[78vh]
-        flex
-        flex-col
-        lg:flex-row
-        lg:gap-x-5"
-        >
-          {/* text */}
+    <section className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden pt-5" id="contact">
+      <div className="container mx-auto">
+        <div className="flex flex-col lg:flex-row min-h-auto lg:min-h-[78vh]">
+          {/* Text */}
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1
-              justify-start
-              items-center
-              bg-team
-              bg-no-repeat 
-              bg-contain
-              lg:ml-5
-              lg:pt-44
+            className="flex-1 justify-start items-center lg:ml-5 lg:pt-5 lg:pt-12 "
+          ><div className="flex flex-col justify-end"> {/* Adiciona a classe flex-col e justify-end */}
+          <h4 className="text-[24px] lg:text-[36px] font-bold text-white mb-4">
+            Precisa de ajuda?
+          </h4>
+          <h2 className="font-primary max-w-[400px] lg:max-w-[1055px] mb-4">
+            Nos mande uma mensagem
+          </h2>
+        </div>
+            <div className="flex p-20 mb-6 w-full bg-team bg-no-repeat bg-cover overflow-hidden">
               
-              
-              lg:min-h-[100vh]
-              lag:min-h-[78vh] 
-            
-            overflow-hidden"
-          >
-            <div className="lg:pt-64  rounded-3xl p-5 lg:w-11/12">
-              <h4 className="text-xl uppercase text-accent font-medium mb-2 tracking-wider  ">
-                Precisa de ajuda?
-              </h4>
-              <h2 className="text-[45px] lg:text-[90px] leading-none mb-12">
-                Nos mande uma mensagem
-              </h2>
               <motion.div
                 variants={fadeIn("left", 0.6)}
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.8 }}
-                className="
-              flex
-              text-[20px]
-              gap-x-6
-              max-w-max
-              mx-auto
-              lg:mx-0
-              "
+                className="flex text-xl lg:text-2xl gap-x-4 max-w-max mx-auto lg:mx-0"
               >
-
+                
               </motion.div>
             </div>
           </motion.div>
@@ -109,16 +73,16 @@ const Contact = () => {
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
             onSubmit={handleFormSubmit}
-            className="flex-1 border rounded-2xl flex flex-col gap-y-6 pb-24 p-6 items-start"
+            className="flex-1 border rounded-3xl flex flex-col gap-y-4 p-4 lg:p-8 items-start"
           >
             {showMessage && (
-              <div className=" text-gradient mb-6">
-                <span>Thanks for message! I'll be in touch soon</span>
+              <div className="text-gradient mb-4">
+                <span>Thanks for your message! I'll be in touch soon.</span>
               </div>
             )}
 
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               name="email"
               id="email"
               type="email"
@@ -134,7 +98,7 @@ const Contact = () => {
               errors={formState.errors}
             />
             <input
-              className="bg-transparent border-b py-3 outline-none w-full placeholder:text-white focus:border-accent transition-all"
+              className="bg-transparent border-b py-2 outline-none w-full placeholder:text-white focus:border-accent transition-all"
               id="name"
               type="text"
               name="name"
@@ -150,7 +114,7 @@ const Contact = () => {
               errors={formState.errors}
             />
             <textarea
-              className="bg-transparent border-b py-12 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none mb-12"
+              className="bg-transparent border-b py-6 outline-none w-full placeholder:text-white focus:border-accent transition-all resize-none"
               id="message"
               name="message"
               type="text"
@@ -164,7 +128,7 @@ const Contact = () => {
               errors={formState.errors}
             />
             <button
-              className="btn btn-lg border "
+              className="btn btn-lg border"
               type="submit"
               disabled={formState.submitting}
             >

@@ -1,11 +1,7 @@
 import React from "react";
-//icons
-import { BsArrowUpRight } from "react-icons/bs";
-// motion
 import { motion } from "framer-motion";
-// variants
 import { fadeIn } from "../variants";
-// services data
+
 const services = [
   {
     name: "Controle Centralizado:",
@@ -46,55 +42,25 @@ const services = [
 
 const Benefits = () => {
   return (
-    <section className="" id="services">
-      <div className=" mx-auto">
-        <div
-          className="
-        bg-benefitsbg
-        bg-no-repeat 
-        bg-cover 
-        
-        overflow-hidden
-        min-h-[100vh]
-        lag:min-h-[78vh]
-        flex
-        flex-col
-        lg:flex-row
-        lg:gap-x-5
-        "
-        >
-          {/* text & image*/}
+    <section
+      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden"
+      id="services"
+    >
+      <div className="container mx-auto">
+        <div className="min-h-auto lg:min-h-[78vh] flex flex-col lg:flex-row lg:gap-x-5">
+          {/* text & image */}
           <motion.div
             variants={fadeIn("right", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="
-          flex-1
-          lg:bg-services
-          
-          lg:bg-bottom
-          bg-no-repeat
-          
-          mb-12
-          lg:mb-0"
+            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mb-8 lg:mb-0"
           >
-            <div className="lg: p-10">
-              <h2
-                className="
-              h2
-              font-bold
-              text-white
-              mb-6"
-              >
-                O que o SmartUp ofecerer?
+            <div className="p-4 lg:p-10">
+              <h2 className="text-[24px] lg:text-[36px] font-bold text-white mb-4">
+                O que o SmartUp oferece?
               </h2>
-              <h3
-                className="
-              font-primary
-              max-w-[1055px]
-              mb-16"
-              >
+              <h3 className="font-primary max-w-[400px] lg:max-w-[1055px] mb-4">
                 O SmartUP é um aplicativo para casas inteligentes que oferece
                 controle centralizado, automação e segurança, além de permitir o
                 controle remoto, tornando as residências mais inteligentes e
@@ -110,42 +76,19 @@ const Benefits = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="
-          flex-1"
+            className="flex-1"
           >
             {/* service list */}
             <div>
               {services.map((service, index) => {
-                //destructure service
-                const { name, description, link } = service;
+                const { name, description } = service;
                 return (
-                  <div
-                    className="
-                   border-b
-                   border-white/20h-[146px]
-                   mb-[38px]
-                   flex"
-                    key={index}
-                  >
-                    <div
-                      className="
-                    max-w-[476px]"
-                    >
-                      <h4
-                        className="
-                      text-[18px]
-                      tracking-wilder
-                      font-primary
-                      font-semibold
-                      mb-0"
-                      >
+                  <div className="border-b border-white/20 mb-4" key={index}>
+                    <div className="max-w-[280px] lg:max-w-[476px] p-4">
+                      <h4 className="text-[18px] lg:text-[24px] font-primary font-semibold mb-1">
                         {name}
                       </h4>
-                      <p
-                        className="
-                      font-secondary
-                      leading-tight"
-                      >
+                      <p className="font-secondary leading-relaxed">
                         {description}
                       </p>
                     </div>
