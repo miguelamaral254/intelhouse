@@ -20,7 +20,7 @@ const Banner = () => {
       bg-no-repeat 
       bg-cover 
       overflow-hidden
-    min-h-[85vh]
+    min-h-[100vh]
     lag:min-h-[78vh]
     flex
     items-start"
@@ -74,7 +74,7 @@ const Banner = () => {
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
               className="
-            text-[55px]
+            text-[45px]
             font-bold
             leading-[0.8]
             lg:text-[70px]
@@ -109,7 +109,7 @@ const Banner = () => {
                   sequence={["Agilidade", 2000, "Praticidade", 2000]}
                   speed={50}
                   className="
-                text-amber-200"
+                text-secundary"
                   wrapper="span"
                   repeat={Infinity}
                 />{" "}
@@ -161,7 +161,7 @@ const Banner = () => {
               <a
                 href="#"
                 className="
-              text-accent
+              text-white
                 btn-link"
               >
                 <Link to="work" activeClass="active" smooth={true} spy={true}>

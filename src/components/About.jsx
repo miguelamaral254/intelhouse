@@ -4,7 +4,6 @@ import CountUp from "react-countup";
 // intersection oberver hook
 import { useInView } from "react-intersection-observer";
 //import icons
-import { FaPlayCircle } from "react-icons/fa";
 //motion
 import { motion } from "framer-motion";
 // variant
@@ -18,17 +17,21 @@ const About = () => {
   });
 
   return (
-    <section className="section" id="about" ref={ref}>
+    <section id="about" ref={ref}>
       <div
         className="
-      container
-      mx-auto pb-20"
+      
+      mx-auto"
       >
         <div
           className="
+        bg-aboutbg  
+        bg-no-repeat 
+        bg-cover 
+        overflow-hidden
         flex
         flex-col
-        gap-y-10
+        
         lg:flex-row
         lg:items-center
         lg:gap-x-20
@@ -47,7 +50,10 @@ const About = () => {
           bg-contain
           bg-no-repeat
           h-[640px]
-          mix-blend-lighten
+          
+          
+          
+  
           bg-top"
           ></motion.div>
           {/* text */}
@@ -56,82 +62,42 @@ const About = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1"
+            className="flex-1  bg-black/20 rounded-xl mt-24 pt-0 p-10"
           >
-            <h2
+            <span
               className="
-            h2
+              text-[45px]
+              pb-20
+              font-bold
+              leading-[0.8]
+              lg:text-[70px]
+
+              
+              
             text-accent"
             >
-              About me.
-            </h2>
-            <h3
+              SmartUp
+            </span>
+            <h1
               className="
-            h3
+            font-primary
+            px-2
             mb-4"
             >
               {" "}
-              I am a passionate Full Stack developer with expertise in Web
-              applications.
-            </h3>
+              Uma nova experiência no mercado SmartHome.
+            </h1>
             <p className="mb-6">
-              I'm a pet father, I love technology and solving problems. I love
-              spending time with my family and I am a carpenter in my spare
-              time. I'm the type of person who loves to be helpful and I'm
-              always there to try to help in any way possible. I love learning
-              and I'm always willing to take on new challenges!
+              O SmartUP é um gerenciador de smart home que representa a
+              vanguarda da tendência de casas inteligentes. Oferece uma
+              experiência inovadora, permitindo o controle completo de
+              dispositivos e sistemas por meio de smartphones e comandos de voz.
+              Automatiza tarefas e personaliza o ambiente para atender às
+              preferências individuais. É a escolha ideal para quem busca uma
+              casa mais inteligente, prática e segura. O SmartUP redefine a
+              forma como interagimos com nossas residências.
             </p>
-            {/* stats */}
-            <div
-              className="
-            flex
-            gap-x-6
-            lg:gap-x-10
-            mb-12"
-            >
-              <div>
-                <div
-                  className="
-                text-[40px]
-                font-tertiary
-                text-gradient
-                mb-2"
-                >
-                  {/* upgrade with date time */}
-                  {inView ? <CountUp start={0} end={1} duration={3} /> : null}
-                </div>
-                <div
-                  className="
-                font-primary
-                text-sm
-                tracking-[2px]"
-                >
-                  Years of <br />
-                  Experience
-                </div>
-              </div>
-              <div>
-                <div
-                  className="
-                text-[40px]
-                font-tertiary
-                text-gradient
-                mb-2"
-                >
-                  {/* upgrade with date time */}
-                  {inView ? <CountUp start={0} end={6} duration={3} /> : null}
-                </div>
-                <div
-                  className="
-                font-primary
-                text-sm
-                tracking-[2px]"
-                >
-                  Projects <br />
-                  completed
-                </div>
-              </div>
-            </div>
+
             <div
               className="
             flex
@@ -142,6 +108,9 @@ const About = () => {
               <button
                 className="
                 btn
+                text-white
+                border
+                border-white
                 btn-lg"
               >
                 <Link
@@ -150,27 +119,17 @@ const About = () => {
                   smooth={true}
                   spy={true}
                 >
-                  Contact me
+                  Fale com a gente
                 </Link>
               </button>
               <div className="flex flex-wrap gap-3">
-                <a
-                  href="#"
-                  className="
-                  text-gradient
-                  btn-link"
-                >
-                  <Link to="work" activeClass="active" smooth={true} spy={true}>
-                    My portfolio
-                  </Link>
-                </a>
                 <div className="flex items-center gap-1.5">
                   <a
-                    href="https://drive.google.com/file/d/1TyL5A_OUHgeUPHUTi-U8SeYjOH_jk4_d/view?usp=drive_link"
+                    href="https://www.youtube.com/watch?v=1P5yyeeYF9o"
                     target="_blank"
-                    className="text-gradient btn-link"
+                    className="text-white btn-link"
                   >
-                    presentation video
+                    Confira nossos planos!!
                   </a>
                 </div>
               </div>

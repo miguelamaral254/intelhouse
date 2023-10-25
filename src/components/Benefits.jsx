@@ -5,36 +5,57 @@ import { BsArrowUpRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
-//link
-import { Link } from "react-scroll";
 // services data
 const services = [
   {
-    name: "Web Development",
+    name: "Controle Centralizado:",
     description:
-      "I specialize in front-end web development, utilizing technologies such as HTML5, CSS3, JavaScript, ReactJS, NextJS, TypeScript, and Tailwind. I create visually appealing and responsive websites with a seamless user interface",
-    link: "https://kenzie.com.br/blog/web-development/",
+      " Permite controlar todos os dispositivos e sistemas da casa a partir de um único aplicativo, proporcionando conveniência e facilidade de uso.",
   },
   {
-    name: "Ux/Ui Desingn",
+    name: "Automatização:",
     description:
-      "I understand the importance of providing users with a delightful experience. I apply my knowledge of UX principles to design intuitive interfaces that enhance usability and accessibility.",
-    link: "https://blog.cubos.academy/ux-ui-design-guia-completo/?utm_term=&utm_campaign=Conversion+-+Search+-+Software+Development+-+DSA&utm_source=google&utm_medium=cpc&hsa_acc=6320525513&hsa_cam=19497756685&hsa_grp=143656515494&hsa_ad=643994963890&hsa_src=g&hsa_tgt=aud-2024399544157:dsa-1819771512692&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAjw1YCkBhAOEiwA5aN4AfSHDIxQYZoyVqLAq0nfbUDEjLD2YT8uUmOC9jW7P3K1Nll3DhIPQhoCu6YQAvD_BwE",
+      " Oferece a capacidade de automatizar tarefas cotidianas, como ajustar a iluminação, temperatura, segurança e entretenimento, tornando a vida mais eficiente.",
   },
   {
-    name: "Product Full-Stack Development:",
+    name: "Personalização:",
     description:
-      "As I work towards becoming a full-stack developer, I am expanding my skills to cover back-end technologies, server-side scripting, and API integrations. This holistic approach enables me to build end-to-end solutions.",
-    link: "https://blog.gokursos.com/carreiras/tecnologia/o-que-e-desenvolvedor-full-stack/?idtag=6c5101ba-0849-49a6-82ad-b655aeb8b564&gclid=CjwKCAjw1YCkBhAOEiwA5aN4ASG1k_5pBFboLlZVmmdtFypD2Dcra5jrAzE3TxFsy-6wi3HG9RpN1RoCf9kQAvD_BwE",
+      " Permite personalizar as configurações de acordo com as preferências individuais, criando um ambiente sob medida para cada morador.",
+  },
+  {
+    name: "Conectividade:",
+    description:
+      " Integra-se com uma variedade de dispositivos e protocolos de casa inteligente, garantindo compatibilidade e expansibilidade.",
+  },
+  {
+    name: "Segurança:",
+    description:
+      " Ajuda a reforçar a segurança da residência por meio do monitoramento e controle de sistemas de segurança, como câmeras e sensores.",
+  },
+  {
+    name: "Eficiência Energética:",
+    description:
+      "Contribui para a economia de energia ao otimizar o uso de eletricidade e aquecimento, tornando a casa mais sustentável.",
+  },
+  {
+    name: "Controle Remoto:",
+    description:
+      "Permite o gerenciamento da casa de qualquer lugar, usando dispositivos móveis, proporcionando flexibilidade e tranquilidade.",
   },
 ];
 
-const Services = () => {
+const Benefits = () => {
   return (
-    <section className="section" id="services">
-      <div className="container mx-auto">
+    <section className="" id="services">
+      <div className=" mx-auto">
         <div
           className="
+        bg-benefitsbg
+        bg-no-repeat 
+        bg-cover 
+        overflow-hidden
+        min-h-[100vh]
+        lag:min-h-[78vh]
         flex
         flex-col
         lg:flex-row"
@@ -48,39 +69,35 @@ const Services = () => {
             className="
           flex-1
           lg:bg-services
+          lg:bg-blend-
           lg:bg-bottom
           bg-no-repeat
-          mix-blend-lighten
+          
           mb-12
           lg:mb-0"
           >
-            <h2
-              className="
-            h2
-            text-accent
-            mb-6"
-            >
-              What I do
-            </h2>
-            <h3
-              className="
-            h3
-            max-w-[455px]
-            mb-16"
-            >
-              I am well-versed in front-end development and possess
-              understanding of database structures like MySQL and data formats
-              like JSON.
-            </h3>
-            <button
-              className="
-          btn
-          btn-sm"
-            >
-              <Link to="work" activeClass="active" smooth={true} spy={true}>
-                See my work
-              </Link>
-            </button>
+            <div className="lg: p-10">
+              <h2
+                className="
+              h2
+              font-bold
+              text-white
+              mb-6"
+              >
+                O que o SmartUp ofecerer?
+              </h2>
+              <h3
+                className="
+              font-primary
+              max-w-[1055px]
+              mb-16"
+              >
+                O SmartUP é um aplicativo para casas inteligentes que oferece
+                controle centralizado, automação e segurança, além de permitir o
+                controle remoto, tornando as residências mais inteligentes e
+                práticas.
+              </h3>
+            </div>
           </motion.div>
           {/* services */}
           <motion.div
@@ -170,4 +187,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Benefits;

@@ -1,6 +1,9 @@
 import React from "react";
-import { BiHomeAlt, BiUser } from "react-icons/bi";
-import { BsClipboardData, BsBriefcase, BsChatSquare } from "react-icons/bs";
+import { BiHomeAlt } from "react-icons/bi";
+import { BsChatSquare  } from "react-icons/bs";
+import {MdSupportAgent} from "react-icons/md"
+import { HiDeviceTablet} from "react-icons/hi"
+import {TbCheckupList} from "react-icons/tb"
 import { Link } from "react-scroll";
 import logo from "../assets/logo.svg";
 
@@ -30,7 +33,7 @@ const Nav = () => {
       text-white/50"
         >
           <div >
-            <img src={logo} alt="lgo" className="bg-blend-color-burn"/>
+            <img src={logo} alt="lgo" className=" w-1/6"/>
           </div>
           <div className="flex">
             <Link
@@ -62,7 +65,7 @@ const Nav = () => {
                     items-center
                     justify-center"
             >
-              <BiUser />
+              <HiDeviceTablet />
             </Link>
             <Link
               to="services"
@@ -77,23 +80,9 @@ const Nav = () => {
                     items-center
                     justify-center"
             >
-              <BsClipboardData />
+              <TbCheckupList />
             </Link>
-            <Link
-              to="work"
-              activeClass="active"
-              smooth={true}
-              spy={true}
-              className="
-                    cursor-pointer
-                    w-[60px]
-                    h-[60px]
-                    flex
-                    items-center
-                    justify-center"
-            >
-              <BsBriefcase />
-            </Link>
+            
             <Link
               to="contact"
               activeClass="active"
@@ -107,7 +96,7 @@ const Nav = () => {
                     items-center
                     justify-center"
             >
-              <BsChatSquare />
+              <MdSupportAgent />
             </Link>
           </div>
         </div>

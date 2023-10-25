@@ -3,8 +3,7 @@ import React from "react";
 import Banner from "./components/Banner";
 import Nav from "./components/Nav";
 import About from "./components/About";
-import Services from "./components/Services";
-import Work from "./components/Work";
+import Benefits from "./components/Benefits";
 import Contact from "./components/Contact";
 
 const App = () => {
@@ -19,8 +18,8 @@ const App = () => {
       <Nav />
       <Banner />
       <About />
-      <Services />
-      <Work />
+      <Benefits />
+      
       <Contact />
     </div>
   );
