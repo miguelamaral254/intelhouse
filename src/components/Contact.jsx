@@ -36,7 +36,7 @@ const Contact = () => {
 
   return (
     <section
-      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden pt-5"
+      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden pt-5 "
       id="contact"
     >
       <div className="container mx-auto">

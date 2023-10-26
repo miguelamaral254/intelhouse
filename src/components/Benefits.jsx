@@ -43,7 +43,7 @@ const services = [
 const Benefits = () => {
   return (
     <section
-      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden"
+      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden "
       id="services"
     >
       <div className="container mx-auto">
