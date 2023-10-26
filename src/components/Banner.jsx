@@ -159,16 +159,15 @@ const Banner = () => {
                 </Link>
               </button>
               <a
-                href="#"
+                href="https://www.figma.com/proto/YLf6Kh9bBCE0lezb1tmdMg/Casa-Inteligente?type=design&node-id=2314-3883&t=KTyKSd36Yjc5DvlS-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=2314%3A3883"
+                target="_blank"
                 className="
                 text-white
                 
                 
                 btn-link"
               >
-                <Link to="work" activeClass="active" smooth={true} spy={true}>
-                  Teste grátis
-                </Link>
+                Teste grátis
               </a>
             </motion.div>
            
