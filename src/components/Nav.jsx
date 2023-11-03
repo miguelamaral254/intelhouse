@@ -32,7 +32,24 @@ const Nav = () => {
       text-white/50"
         >
           <div className="flex items-center">
-            <img src={logo} alt="logo" className="w-24 max-w-[460px] h-auto" /> {/* Estilo para tornar o logo responsivo */}
+            <Link
+              to="home"
+              activeClass="active"
+              smooth={true}
+              className="
+                    cursor-pointer
+                    w-[60px]
+                    h-[60px]
+                    flex
+                    items-center
+                    justify-center"
+            >
+              <img
+                src={logo}
+                alt="logo"
+                className="w-24 max-w-[460px] h-auto"
+              />
+            </Link>
           </div>
           <div className="flex">
             <Link
