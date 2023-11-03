@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
-
+import Image from "../assets/services.png"
 const services = [
   {
     name: "Controle Centralizado:",
@@ -46,7 +46,7 @@ const Benefits = () => {
       className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden "
       id="services"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto p-5">
         <div className="min-h-auto lg:min-h-[78vh] flex flex-col lg:flex-row lg:gap-x-5">
           {/* text & image */}
           <motion.div
@@ -54,7 +54,7 @@ const Benefits = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mb-8 lg:mb-0"
+            className="flex-1"
           >
             <div className="p-4 lg:p-10">
               <h2 className="text-[24px] lg:text-[36px] font-bold text-white mb-4">
@@ -69,6 +69,20 @@ const Benefits = () => {
                 necessidades e estilos de vida individuais.
               </h3>
             </div>
+             <motion.div
+            variants={fadeIn("right", 0.5)}
+            initial="hidden"
+            whileInView={"show"}
+            className="
+          hidden
+          lg:flex
+          flex-1
+          max-w-[520px]
+          pb-32
+          "
+          >
+            <img src={Image} alt="Imagem" />
+          </motion.div>
           </motion.div>
           {/* services */}
           <motion.div

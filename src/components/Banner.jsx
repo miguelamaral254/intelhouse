@@ -29,7 +29,8 @@ const Banner = () => {
       <div
         className="
       container
-      mx-auto"
+      mx-auto
+      "
       >
         <div
           className="
@@ -49,11 +50,9 @@ const Banner = () => {
             className="
           hidden
           lg:flex
-          w-full
-          h-full
           flex-1
-          max-w-[420px]
-          lg:max-w-[682px]
+          max-w-[220px]
+          pb-32
           "
           >
             <img src={Image} alt="Imagem" />

@@ -22,7 +22,7 @@ const Nav = () => {
           className="
       w-full
       bg-black/20
-      h-[96px] 
+      h-[66px] 
       mx-auto
       px-5
       flex

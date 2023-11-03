@@ -16,7 +16,7 @@ const About = () => {
       className="bg-aboutbg bg-no-repeat bg-cover overflow-hidden  min-h-[85vh]
       lag:min-h-[78vh]"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto p-5">
         <div className=" flex flex-col lg:flex-row lg:items-center lg:gap-x-8 lg:gap-y-0 h-auto lg:h-screen">
           {/* Img */}
           <motion.div

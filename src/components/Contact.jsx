@@ -36,10 +36,10 @@ const Contact = () => {
 
   return (
     <section
-      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden pt-5 "
+      className="bg-benefitsbg bg-no-repeat bg-cover overflow-hidden pt-5 h-[90vh] "
       id="contact"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto p-5">
         <div className="flex flex-col lg:flex-row min-h-auto lg:min-h-[78vh] gap-x-10 gap-y-5">
           {/* Text */}
           <motion.div
